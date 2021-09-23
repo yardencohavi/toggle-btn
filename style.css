@@ -1,0 +1,218 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    left: 580px;
+    top: -20px;
+    
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 25px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    right: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 30px;
+  }
+
+  input {
+    position: absolute;
+    left: 200px;
+    top: 25px;
+    z-index: 1;
+    opacity: 0;
+    zoom: 3;
+  }
+  #toggle:checked ~ .switch > .slider {
+    background-image:  linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  }
+  #toggle:focus ~ .switch > .slider {
+    box-shadow: 0 0 1px hsl(233, 13%, 49%);
+  }
+  #toggle:checked ~ .switch > .slider::before {
+    -webkit-transform: translateX(-17px);
+    -ms-transform: translateX(-17px);
+    transform: translateX(-17px);
+  }
+
+* {
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  position: relative;
+
+  font-family: "Montserrat";
+    background-color: hsl(240, 78%, 98%);
+    font-size: 14px;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem; 
+}
+.top-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.bottom-left{
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+}
+  .header__text-box{
+    text-align: center;
+    font-size: 13px;
+    color: hsl(234, 14%, 74%); 
+}
+.header-primary{ 
+      color:hsl(233, 13%, 49%);
+      font-size: 23px;
+      margin-bottom: 30px;
+}
+
+.heading-second{
+      padding:25px;
+}
+
+.row {
+    padding-top: 40px;
+    max-width: 114rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    height: 40rem; 
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); 
+    background-color: #fff;
+    width: 270px;
+    font-size: 12px;
+
+}
+.card__1 {
+    background-color: #fff;
+    height: 35rem;
+    
+}
+.card__2{
+    background-image:  linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:white;
+   
+}
+
+.card__heading-main{
+    color:hsl(233, 13%, 49%);
+    padding-top: 30px;
+
+}
+.card__heading-main2{
+    color:white;
+    padding-top: 30px;
+
+
+}
+
+
+.card__details {
+    padding: 1.2rem; 
+}
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        font-size: 14px;
+        padding: 1rem; 
+        border-bottom: 1px solid rgb(216, 211, 211) ;
+ }
+.card__details ul li:first-child {
+border-top: 1px solid rgb(216, 211, 211); }
+     
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    width: 25rem;
+    height: 30px;
+    
+ }
+
+ .btn--white {
+    background-color: white;
+    color:hsl(237, 63%, 64%);
+    margin-top: 35px;
+ }
+
+
+  .btn--purple {
+    background-image:  linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    margin-top: 10px;
+ }
+
+
+ .control-me-card1::after {
+  content: "$29.99";
+  color:hsl(232, 13%, 33%);
+    font-size: 50px;
+}
+#toggle:checked ~ main > .row > .col-1-of-3 > .card > .control-me-card1::after{
+  content: "$249.99";
+  color:hsl(232, 13%, 33%);
+}
+
+.control-me-card2::after {
+  content: "$19.99";
+  color:white;
+  font-size: 50px;
+}
+#toggle:checked ~ main > .row > .col-1-of-3 > .card > .control-me-card2::after{
+  content: "$199.99";
+  color:white;
+}
+
+.control-me-card3::after {
+  content: "$39.99";
+  color:hsl(232, 13%, 33%);
+    font-size: 50px;
+}
+#toggle:checked ~ main > .row > .col-1-of-3 > .card > .control-me-card3::after{
+  content: "$399.99";
+  color:hsl(232, 13%, 33%);
+}
