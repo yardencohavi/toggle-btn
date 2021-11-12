@@ -1,6 +1,6 @@
 
 # Toggle Button
-
+> My Demo : yardencohavi.github.io/toggle-btn/
 > This is the one of The Third meeting CSS & HTML challenges -> Toggle Button.
 
 ---
@@ -48,8 +48,5 @@
 
 ---
 
-## Preview
-
-![!preview](./design/desktop-design-annually.jpg)
 
 **GOOD LUCK!**🚀
